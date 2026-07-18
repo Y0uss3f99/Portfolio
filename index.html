@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>Youssef Mohamed</title>
+    <title>Youssef Mohamed | Frontend Developer</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./src/img/logoP.jpeg"
+  >
+  </head>
+
+  <body class="relative overflow-x-hidden bg-slate-950 text-white">
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+      <div
+        class="absolute -top-40 -left-40 h-125 w-125 rounded-full bg-blue-600/40 blur-[140px] animate-pulse"
+      ></div>
+
+      <div
+        class="absolute top-40 -right-32 h-112.5 w-112.5 rounded-full bg-cyan-500/30 blur-[140px]"
+      ></div>
+
+      <div
+        class="absolute bottom-0 left-1/3 h-100 w-100 rounded-full bg-indigo-500/30 blur-[140px]"
+      ></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="my-5 relative mx-auto mt-4 z-50 sm:mt-6 flex w-[92%] sm:w-[90%] max-w-7xl items-center justify-between rounded-2xl border border-white/20 bg-white/10 px-4 sm:px-8 py-3 sm:py-4 backdrop-blur-xl shadow-xl"
+    >
+      <h1 class="text-xl sm:text-2xl font-bold text-blue-400">Youssef</h1>
+
+   <ul class="hidden gap-8 text-lg md:flex">
+  <button class="hover:cursor-pointer transition rounded-xl active:bg-blue-700/30 hover:text-blue-400" data-page="home">
+    Home
+  </button>
+  <button class="hover:cursor-pointer transition hover:text-blue-400" data-page="about">
+    About
+  </button>
+  <button class="hover:cursor-pointer transition hover:text-blue-400" data-page="projects">
+    Projects
+  </button>
+  <button class="hover:cursor-pointer transition hover:text-blue-400" data-page="experience">
+    Experience
+  </button>
+  <button class="hover:cursor-pointer transition hover:text-blue-400" data-page="contact">
+    Contact
+  </button>
+</ul>
+
+     
+
+      <button
+        id="menuBtn"
+        class="flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 bg-white/10 text-xl md:hidden"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+ <div
+  id="mobileMenu"
+  class="absolute left-0 top-full mt-3 hidden w-full flex-col gap-1 rounded-2xl border border-white/20 bg-slate-900/95 p-4 backdrop-blur-xl shadow-xl md:hidden"
+>
+  <button  data-page="home" class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-blue-400">
+    Home
+  </button>
+
+  <button  data-page="about" class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-blue-400">
+    About
+  </button>
+
+  <button data-page="projects" class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-blue-400">
+    Projects
+  </button>
+
+  <button data-page="experience" class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-blue-400">
+    Experience
+  </button>
+
+  <button data-page="contact" class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-blue-400">
+    Contact
+  </button>
+
+  
+</div>
+    </nav>
+    
+    <!-- Home -->
+    <section
+      id="home"
+      class="mx-auto  flex min-h-[80vh]  shadow-2xl p-6 shadow-blue-800 rounded-2xl my-20 w-[92%] sm:w-[90%] max-w-7xl flex-col-reverse items-center justify-center gap-10 py-12 lg:flex-row lg:justify-between lg:gap-6 lg:py-0"
+    >
+      <div class="max-w-xl text-center lg:text-left">
+        <p class="mb-3 text-blue-400">👋 Hello, I'm</p>
+
+        <h1
+          class="mb-6 text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
+        >
+          Youssef Mohamed <br />
+          <span class="text-blue-400">Frontend Developer</span>
+        </h1>
+
+        <p class="mb-8 text-slate-300">
+          I build modern, responsive and interactive web applications using
+          HTML, CSS[Tailwind ,and bootstrap ], JavaScript, React and Next.js.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 lg:justify-start"
+        >
+          <button
+          
+            class="w-full sm:w-auto rounded-xl bg-blue-600 px-7 py-3 hover:bg-blue-500"
+          >
+          <a href="./src/cv/Youssef_Mohamed_CV.pdf" download="Youssef_Mohamed_cv.pdf"> Download CV</a>
+           
+          </button>
+
+          <button
+            class="w-full sm:w-auto rounded-xl bg-blue-600 px-6 py-3 transition transition-discrete hover:bg-blue-400"
+          >
+            <a href="mailto:youssef20mo05hamed@gmail.com" class="">
+              Contact Me</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="block">
+        <div
+          class="flex h-56 w-56 sm:h-72 sm:w-72 lg:h-96 lg:w-96 items-center justify-center rounded-full border border-blue-500/30 bg-white/10 backdrop-blur-xl"
+        >
+          <img
+            src="./src/img/WhatsApp Image 2026-02-14 at 12.57.08.jpeg"
+            alt="Youssef"
+            class="h-full w-full rounded-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="mx-auto hidden pages p-2 min-h-[80vh] -z-30 w-[92%] sm:w-[90%] max-w-7xl my-12 sm:my-20"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-stretch gap-6 md:gap-2"
+      >
+        <div
+          class="flex-1 rounded-3xl bg-slate-900/60 border border-white/10 p-6 sm:p-10 backdrop-blur-md transition duration-300 hover:border-blue-400 hover:-translate-y-2"
+        >
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <i class="fa-solid fa-user text-blue-400 text-3xl mb-4"></i>
+            About <span class="text-blue-400">Me</span>
+          </h2>
+
+          <p class="text-lg leading-6 text-slate-300">
+            Hi, I'm
+            <span class="font-semibold text-blue-400">Youssef Mohamed</span>, a
+            <span class="font-semibold text-blue-400"> Frontend Developer</span>
+            passionate about building modern, responsive, and user-friendly web
+            applications. I enjoy transforming ideas into interactive digital
+            experiences using HTML, CSS, JavaScript, React, Next.js, and
+            Tailwind CSS.
+          </p>
+          <p class="mt-4">🚀 5+ Projects</p>
+          <p>💻 2+ Years Learning</p>
+        </div>
+        <div
+          class="flex-1 rounded-3xl bg-slate-900/60 border border-white/10 p-6 sm:p-10 backdrop-blur-md transition duration-300 hover:border-blue-400 hover:-translate-y-2"
+        >
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <i class="fa-solid fa-code text-blue-400 text-3xl mb-4"></i>
+            My <span class="text-blue-400"> Journey</span>
+          </h2>
+
+          <p class="text-lg leading-6 text-slate-300">
+            I'm continuously learning new technologies and improving my
+            problem-solving skills through personal projects and coding
+            challenges. My goal is to create clean, scalable, and
+            high-performance web applications while growing as a software
+            engineer.
+          </p>
+          <p class="mt-4">⚡ 15+ Technologies</p>
+          <p>☕ 500+ Hours Coding</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="mx-auto hidden pages p-2 min-h-[80vh] -z-30 w-[92%] sm:w-[90%] max-w-7xl my-12 sm:my-20"
+    >
+      <div class="flex flex-wrap justify-between items-center">
+        <div
+          class=" w-[50%] h-full basis-full md:basis-[48%] my-12 mx-2 cursor-pointer"
+        >
+          <div class="aura aura-dua h-fulll w-full">
+            <div class="card bg-base-200">
+              <div class="relative h-48 overflow-hidden rounded-2xl">
+                <img src="./src/img/E-c/image1.png" class="slide" />
+                <img src="./src/img/E-c/image2.png" class="slide" />
+                <img src="./src/img/E-c/image3.png" class="slide" />
+                <img src="./src/img/E-c/image4.png" class="slide" />
+                <img src="./src/img/E-c/image5.png" class="slide" />
+                <img src="./src/img/E-c/image6.png" class="slide" />
+                <img src="./src/img/E-c/image7.png" class="slide" />
+                <img src="./src/img/E-c/image8.png" class="slide" />
+              </div>
+
+              <div class="card-body">
+                <h1 class="text-3xl text-blue-600">E-Commerce Website</h1>
+
+                <p class="line-clamp-4">
+                  Developed a responsive, SEO-optimized e-commerce platform
+                  using Next.js (App Router) and TypeScript. Leveraged
+                  Server-Side Rendering (SSR) to improve performance and SEO.
+                  Built a dynamic product catalog with URL-based filtering
+                  (category, size, color). Integrated TanStack Query for
+                  efficient data fetching, caching, and server-state management.
+                  Implemented secure authentication with NextAuth.js and
+                  HTTP-only cookies. Designed an accessible, pixel-perfect UI
+                  using Shadcn/ui and Tailwind CSS. Built a persistent shopping
+                  cart with real-time state synchronization.
+                </p>
+
+                <p class="text-blue-600 mt-4">Technologies:</p>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Next.js</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >React</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >TypeScript</span
+                  >
+                </div>
+
+                <a
+  href="https://github.com/Y0uss3f99/my-shop"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mt-6 inline-flex mx-auto items-center gap-2 rounded-2xl bg-blue-600/50 px-5 py-2 text-white transition hover:bg-blue-700/50"
+>
+  <i class="fa-brands fa-github"></i>
+  GitHub
+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class=" w-[50%] h-full basis-full md:basis-[48%] my-12 mx-2 cursor-pointer"
+        >
+          <div class="aura aura-dual h-full w-full">
+            <div class="card bg-base-200">
+              <div class="relative h-48 overflow-hidden rounded-2xl">
+                <img src="./src/img/scial/img1.png" class="slide" />
+                <img src="./src/img/scial/img2.png" class="slide" />
+                <img src="./src/img/scial/img3.png" class="slide" />
+                <img src="./src/img/scial/img4.png" class="slide" />
+              </div>
+
+              <div class="card-body">
+                <h1 class="text-3xl text-blue-600">Social App</h1>
+
+                <p class="line-clamp-4">
+                  Developed a mobile-first social media application using
+                  React.js and Tailwind CSS. Implemented authentication, profile
+                  management, post creation, and REST API integration with
+                  TanStack Query while ensuring responsive design and protected
+                  routes.
+                </p>
+
+                <p class="text-blue-600 mt-4">Technologies:</p>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >React</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >react Query[Tanstack]</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >JavaScript</span
+                  >
+                </div>
+
+                          <a
+  href="https://github.com/Y0uss3f99/my-social-App"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mt-6 inline-flex mx-auto items-center gap-2 rounded-2xl bg-blue-600/50 px-5 py-2 text-white transition hover:bg-blue-700/50"
+>
+  <i class="fa-brands fa-github"></i>
+  GitHub
+</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div
+          class=" w-[50%] h-full basis-full md:basis-[48%] my-12 mx-2 cursor-pointer"
+        >
+          <div class="aura aura-dua h-fulll w-full">
+            <div class="card bg-base-200">
+              <div class="relative h-48 overflow-hidden rounded-2xl">
+                <img src="./src/img/space/img1.jpg" class="slide" />
+                <img src="./src/img/space/img2.jpg" class="slide" />
+                <img src="./src/img/space/img3.jpg" class="slide" />
+              </div>
+
+              <div class="card-body">
+                <h1 class="text-3xl text-blue-600">Cosmos Space Dashboard</h1>
+
+                <p class="line-clamp-4">
+                  Built a responsive space-themed dashboard with HTML, CSS, and
+                  JavaScript, delivering a modern user interface, smooth
+                  animations, and an optimized experience across all devices.
+                  Deployed seamlessly on Vercel.
+                </p>
+
+                <p class="text-blue-600 mt-4">Technologies:</p>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Next.js</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >React</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >TypeScript</span
+                  >
+                </div>
+
+        <div class="mt-6 flex gap-3">
+  <a
+    href="https://github.com/Y0uss3f99/Cosmos-Space-Dashboard"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="rounded-xl bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="https://cosmos-space-dashboard-flax.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="rounded-xl border border-blue-500 px-5 py-2 text-blue-400 transition hover:bg-blue-500 hover:text-white"
+  >
+    Live Demo
+  </a>
+</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div
+          class=" w-[50%] h-full basis-full md:basis-[48%] my-12 mx-2 cursor-pointer"
+        >
+          <div class="aura aura-dual h-full w-full">
+            <div class="card bg-base-200">
+              <div class="relative h-48 overflow-hidden rounded-2xl">
+                <img src="./src/img/taskM/img1.png" class="slide" />
+                <img src="./src/img/taskM/img2.png" class="slide" />
+                <img src="./src/img/taskM/img3.png" class="slide" />
+                <img src="./src/img/taskM/img4.png" class="slide" />
+                <img src="./src/img/taskM/img5.png" class="slide" />
+                <img src="./src/img/taskM/img6.png" class="slide" />
+              </div>
+
+              <div class="card-body">
+                <h1 class="text-3xl text-blue-600">Task Manager</h1>
+
+                <p class="line-clamp-4">
+                  Built a mobile-first Task Manager application using React.js
+                  and Redux, enabling users to create, edit, delete, and
+                  complete tasks efficiently. Implemented centralized state
+                  management with Redux, reusable components, and a fully
+                  responsive interface optimized for mobile, tablet, and desktop
+                  devices.
+                </p>
+
+                <p class="text-blue-600 mt-4">Technologies:</p>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >React</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Redux</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
+                    >JavaScript (ES6+)</span
+                  >
+                </div>
+                
+<div class=" flex flex-wrap  justify-start gap-3 items-center">
+
+                <a
+    href="https://github.com/Y0uss3f99/Task-Manager"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="rounded-xl bg-blue-600 px-5 py-2 w-[20%] text-white transition hover:bg-blue-700"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="https://task-manager-neon-chi.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="rounded-xl border border-blue-500 px-5 w-[20%] py-2 text-blue-400 transition hover:bg-blue-500 hover:text-white"
+  >
+    Live Demo
+  </a>
+</div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+    <!-- Experience -->
+<section id="experience" class="py-20  hidden pages" >
+ 
+  <div class="mx-auto w-4/5 max-w-5xl">
+  <header class="text-center"><h2 class="text-4xl font-bold text-white">
+        Work <span class="text-blue-400">Experience</span>
+      </h2> </header>
+  <div class="my-3">
+    <div class="rounded-2xl border border-blue-500/30 bg-blue-900/20 p-8 backdrop-blur-lg shadow-lg shadow-blue-900/40">
+      <p class="text-sm text-slate-400">2025 – 2026</p>
+
+        <h3 class="mt-2 text-2xl font-bold text-white">
+          💼 Frontend Web Development Trainee
+        </h3>
+
+        <p class="mt-1 text-lg">
+          <span class="font-semibold text-blue-400">Route Academy</span>
+          <span class="text-slate-400">• 6 Months</span>
+        </p>
+
+        <p class="mt-4 leading-7 text-slate-300">
+          Completed an intensive frontend development training program covering
+          HTML, CSS, JavaScript, React.js, and Next.js. Built multiple real-world
+          projects while gaining hands-on experience with responsive design,
+          REST APIs, Git & GitHub, and modern frontend development practices.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">HTML</span>
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">CSS</span>
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">JavaScript</span>
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">React.js</span>
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">Next.js</span>
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">Git & GitHub</span>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 pages hidden  ">
+ 
+  <div class="rounded-2xl   w-4/5 mx-auto borderp-8 backdrop-blur-lg shadow-lg shadow-blue-900/40 transition duration-300 hover:border-blue-400 hover:shadow-blue-500/30">
+  <header class="text-center"><h2 class="text-4xl font-bold text-white">
+         Contact <span class="text-blue-400">Me</span>
+      </h2> </header>
+  <div class="my-3">
+    <div class="rounded-2xl border border-blue-500/30 bg-blue-900/20 p-8 backdrop-blur-lg shadow-lg shadow-blue-900/40 transition duration-300 hover:border-blue-400 hover:shadow-blue-500/30">
+     
+      <h3>
+         Let's Work Together
+      </h3>
+        <p class="mt-2 text-xl font-bold text-white">
+        Have a project in mind or want to collaborate?
+I'm always open to discussing new opportunities
+and exciting ideas. 
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <a class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300" target="_blank"
+  rel="noopener noreferrer" href="mailto:youssef20mo05hamed@gmail.com">📧Email</a>
+          <a class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300" target="_blank"
+  rel="noopener noreferrer" href="https://github.com/Y0uss3f99">💻GitHub</a>
+          <a class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300" target="_blank"
+  rel="noopener noreferrer" href="https://www.linkedin.com/in/youssef-mohamed-976977334/" >💼LinkedIn</a>
+
+          <span class="rounded-full bg-blue-500/20 px-3 py-1 text-sm text-blue-300">📍 Cairo, Egypt</span>
+         
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<footer class="mt-20 border-t border-white/10 bg-slate-950">
+  <div class="mx-auto max-w-6xl px-6 py-10">
+
+    <div class="flex flex-col items-center gap-6">
+
+      <h2 class="text-3xl font-bold text-white">
+        Youssef <span class="text-blue-400">Mohamed</span>
+      </h2>
+
+      <p class="text-center text-slate-400">
+        Frontend Developer passionate about building modern, responsive,
+        and user-friendly web applications.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+
+        <a href="mailto:youssef20mo05hamed@gmail.com"
+          class="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-blue-300 transition hover:bg-blue-500 hover:text-white">
+          Email
+        </a>
+
+        <a href="https://github.com/Y0uss3f99"
+          target="_blank"
+          class="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-blue-300 transition hover:bg-blue-500 hover:text-white">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/youssef-mohamed-976977334/"
+          target="_blank"
+          class="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-blue-300 transition hover:bg-blue-500 hover:text-white">
+          LinkedIn
+        </a>
+
+      </div>
+
+      <div class="h-px w-full bg-white/10"></div>
+
+      <p class="text-center text-sm text-slate-500">
+        © 2026 Youssef Mohamed. All rights reserved.
+      </p>
+
+      <p class="text-center text-sm text-slate-600">
+        Built with ❤️ using HTML, Tailwind CSS & JavaScript.
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
